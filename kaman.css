@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.video{
+    width: 100%;
+    height: 62vh;
+    background: linear-gradient(rgba(8, 8, 8, .5), rgba(0, 12, 44, 0.699)), url(https://wallpapercave.com/wp/wp5176462.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+    justify-content: center;
+    text-align: center;
+}
+
+.video iframe{
+    z-index: 1;
+}
+
+.floating{
+    z-index: 20;
+    width: 100%;
+    color: white;
+    position: absolute;
+}
+
+.floating img{
+    margin-top: -15vh;
+    margin-left: 1vw;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.floating h1{
+    margin-top: -12vh;
+    margin-left: 16vw;
+    text-shadow: 2px 2px 5px black;
+    width: 100%;
+    position: absolute;
+}
+
+.floating .rating{
+    position: absolute;
+    margin-left: 16.2vw;
+    margin-top: -14vh;
+}
+
+.floating .tags{
+    position: absolute;
+    margin-left: 16.2vw;
+    margin-top: -6vh;
+    font-size: 20px;
+}
+
+.floating .desp{
+    position: absolute;
+    margin-left: 16.2vw;
+    margin-top: -25vh;
+    width: 40%;
+}
+
+.content{
+    width: 100%;
+    background-color: rgb(0, 32, 54);
+    z-index: 10;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+
+.content iframe{
+    width: 80%;
+    height: 650px;
+    border-radius: 20px;
+    margin-top: 40vh;
+}
+
+#disqus_thread{
+    margin-top: -35vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+@media (max-width: 760px) {
+    .floating{
+     text-align: center;
+     justify-content: center;
+    }
+
+    .floating img{
+        margin-top: -20vh;
+    }
+
+    .floating h1{
+        margin-top: 29vh;
+        margin-left: 1vw;
+    }
+    .floating .rating{
+        margin-top: 26vh;
+        margin-left: 75vw;
+    }
+    .floating .tags{
+        margin-left: 16.2vw;
+        margin-top: 27vh;
+        font-size: 10px; 
+    }
+    .floating .desp{
+        margin-left: 8vh;
+        margin-top: 11vh;
+        width: 80%;
+    }
+
+    .content iframe{
+        width: 80%;
+        height: 230px;
+        margin-top: 72vh;
+        margin-left: 2vh;
+    }
+
+    #disqus_thread{
+        margin-top: -65vh;
+    }
+}
